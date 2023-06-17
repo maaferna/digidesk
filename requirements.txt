@@ -1,2 +1,67 @@
-Django==3.2.13
+asgiref @ file:///home/runner/.cache/pypoetry/artifacts/44/47/8b/eeb8b3236803e39b50f24aec1dd7dc622a47aedd27d0c37ba347271f9b/asgiref-3.5.1-py3-none-any.whl
+backports.entry-points-selectable==1.1.1
+beautifulsoup4==4.12.2
+CacheControl==0.12.10
+cachy==0.3.0
+certifi @ file:///home/runner/.cache/pypoetry/artifacts/58/94/ad/c92c7ef8cba2444f4da61c1c47e27e96bc6b71043e9a175a2fd20e4495/certifi-2023.5.7-py3-none-any.whl
+cffi==1.15.0
+charset-normalizer @ file:///home/runner/.cache/pypoetry/artifacts/ed/4c/bf/ecbe5d0f99d3e70e82399fb2141338a3791ad1e83475921d81757ffc25/charset_normalizer-3.1.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+cleo==0.8.1
+clikit==0.6.2
+crashtest==0.3.1
+cryptography==35.0.0
+debugpy==1.2.1
+distlib==0.3.3
+Django @ file:///home/runner/.cache/pypoetry/artifacts/0a/6e/a7/ad9b81885c41d7edd5f5fd91479a9c6be684b7ad660172f6b1f93c7d42/Django-3.2.13-py3-none-any.whl
+django-bootstrap-v5==1.0.11
+django-js-lib-bootstrap5 @ file:///home/runner/.cache/pypoetry/artifacts/7d/1c/2c/da970a3d8bb4b070de351fb7de95b596890afae561b2fde94c143ee46e/django_js_lib_bootstrap5-0.0.2-py2.py3-none-any.whl
+djangorestframework @ file:///home/runner/.cache/pypoetry/artifacts/0f/b1/aa/b1e8802788d3d2c6f62f18e2e8cebcb967770f1833cc9d9ca255e14197/djangorestframework-3.14.0-py3-none-any.whl
+docopt==0.6.2
+filelock==3.3.2
+future==0.18.2
+html5lib==1.1
+idna @ file:///home/runner/.cache/pypoetry/artifacts/0b/15/a9/ce99545393f0334813ed7f8c93c971de7c34006aad4a32241a43170414/idna-3.4-py3-none-any.whl
+importlib-metadata==3.10.1
+jedi==0.15.2
+jeepney==0.7.1
+keyring==21.8.0
+lockfile==0.12.2
+msgpack==1.0.2
+numpy @ file:///home/runner/.cache/pypoetry/artifacts/0a/f1/63/4e86e206dd78b5ffa1d0b33299c8275c3e1a2411fac9d63320ce69de5f/numpy-1.22.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+packaging==20.9
+parso==0.5.2
+pastel==0.2.1
+pexpect==4.8.0
+pipreqs-amasad==0.4.10
+pkginfo==1.7.1
+platformdirs==2.4.0
+pluggy==0.13.1
+poetry==1.1.11
+poetry-core==1.0.7
 psycopg2-binary==2.9.6
+ptyprocess==0.7.0
+pycparser==2.21
+pyflakes==2.1.1
+pylev==1.4.0
+pyparsing==3.0.5
+python-jsonrpc-server==0.3.2
+python-language-server==0.31.10
+pytz @ file:///home/runner/.cache/pypoetry/artifacts/2f/64/84/b6333ff5a89076f2f48899fb6dc7e562400c812c962713b90b44ac5160/pytz-2022.1-py2.py3-none-any.whl
+requests @ file:///home/runner/.cache/pypoetry/artifacts/e4/f0/02/7282fe6161617431af21eb6aade409ae268ff2368eb949ad3b32dd772d/requests-2.31.0-py3-none-any.whl
+requests-toolbelt==0.9.1
+rope==0.18.0
+SecretStorage==3.3.1
+shellingham==1.4.0
+six==1.16.0
+soupsieve==2.4.1
+sqlparse @ file:///home/runner/.cache/pypoetry/artifacts/5c/57/47/582e6c575570333d1c84c495489bc30ed2c7e0fccaabeaa29650cfc543/sqlparse-0.4.2-py3-none-any.whl
+toml==0.10.2
+tomlkit==0.7.2
+typing-extensions==3.7.4.3
+ujson==1.35
+urllib3 @ file:///home/runner/.cache/pypoetry/artifacts/3a/48/29/9467dc53f20bddb1d73097161b65f1bf86a8c26cac152cbb6b9bf362f1/urllib3-2.0.2-py3-none-any.whl
+virtualenv==20.10.0
+webencodings==0.5.1
+yapf==0.31.0
+yarg==0.1.9
+zipp==3.4.1

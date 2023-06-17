@@ -1,6 +1,5 @@
 { pkgs }: {
   deps = [
-    pkgs.secrets.token_urlsafe(32)
     pkgs.python38Full
   ];
   env = {
