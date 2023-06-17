@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block content %}
+
+<div class="container">
+  <h1>Digidesk</h1>
+  <p>
+    Mini project application to fetch data from Digimon API, making dynamic and incorporating events so that the user can interact with the DOM.
+    To consume data from API used the Fetch function in JavaScript, and also with the construction of Python query.
+    <a href="https://digimon-api.vercel.app/">Go to API page</a>
+  </p>
+</div>
+
+<div class="container">
+  <div class="row mt-3">
+  <h2>Retrieve Data From API With Views Django</h2>
+  {% for item in data_api %}
+    <div class="col col-sm-6 col-md-3 ">
+      <div class="card text-dark bg-light mb-3" style="max-height: 100vh; overflow:auto;">
+        <div class="card-header">
+          <h3 class="card-title">{{ item.name }}</h3>
+        </div>
+        <div class="body">
+          <img class="card-img-top img-fluid rounded mx-auto d-block" style="max-height:300px;max-width:300px" src="{{ item.img }}">
+          <p class="card-subtitle mb-2 text-muted">Level: {{ item.level }}</p>
+          <button data-id="{{ item.name }}" class="sync btn btn-secondary dblock mt-3">Sincronizar with Database</button>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+  <div class="row d-flex mb-1">
+    {% if data_api.has_previous %}
+      <buttom type="button" class="btn btn-outline-secondary"><a href="?page={{ data_api.previous_page_number }}#digimons-list">&laquo; PREV </a></buttom>
+    {% endif %}
+  </div>
+  <div class="row d-flex mb-4">
+    {% if data_api.has_next %}
+      <button class="btn btn-outline-secondary"><a href="?page={{ data_api.next_page_number }}#digimons_list"> NEXT &raquo;</a></button>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container mt-6">
+  <h2>Display Data With Fetch JavaScript Funcion</h2>
+  <div class="row mt-3" id="contenido">
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row mt-3">
+    <h2>Display Digimons Save in DataBase</h2>
+    {% for item in digimons %}
+      <div class="col col-sm-6 col-md-3">
+        <div class="card text-dark bg-light mb-3" style="max-height: 100vh; overflow:auto;">
+          <div class="card-header">
+            <h3 class="card-title">{{ item.name }}</h3>
+          </div>
+          <div class="body">
+            <img class="card-img-top img-fluid rounded mx-auto d-block" style="max-height:300px;max-width:300px" src="{{ item.image }}">
+            <p class="card-subtitle mb-2 text-muted">Level: {{ item.level }}</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#digiModal">Display Digimon</button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="modal fade" id="digiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="{% url 'js_digimons' %}">API Calls with JavaScript</a></li>
+      <li class="breadcrumb-item"><a href="#"></a>API Calls connect with Python</li>
+    </ol>
+  </nav>
+</section>
+
+
+{% endblock %}
+
+{% block js%}
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="../static/js/digidesk.js"></script>
+{% endblock %}
