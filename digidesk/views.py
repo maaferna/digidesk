@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from .models import Digimon
 from django.http import JsonResponse, HttpResponse
-import requests
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from .paginations import CustomPagination
 import json
 from django.views.decorators.csrf import csrf_exempt
+import requests
 # Create your views here.
 
 def index(request):
